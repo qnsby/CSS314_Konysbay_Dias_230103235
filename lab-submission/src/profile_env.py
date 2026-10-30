@@ -15,9 +15,9 @@ def main():
         "os": f"{platform.system()} {platform.release()}",
         "cpu_model": platform.processor(),
         "physical_cores": psutil.cpu_count(logical=False),
-        "logical_cores": psutil.cpu_count(logical=True),
+        "logical_threads": psutil.cpu_count(logical=True),
         "base_freq_mhz": psutil.cpu_freq().max if psutil.cpu_freq() else "Unknown",
-        "cache_line_size": 64, # Стандарт для архитектуры x86
+        "cache_line_bytes": 64,
         "python_version": platform.python_version()
     }
     

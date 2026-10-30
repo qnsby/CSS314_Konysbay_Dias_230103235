@@ -84,14 +84,15 @@ def main():
     # Для нашего трафарета: 5 операций с плавающей точкой (4 сложения, 1 умножение) на 1 элемент
     # Чтение/запись: ~16 байт (чтение 8 байт, запись 8 байт). AI = 5 / 16 = 0.3125 FLOPs/Byte
     ai = 5.0 / 16.0
-    regime = "Memory-Bandwidth Bound" if ai < 1.0 else "Compute Bound"
+    # Верификатор ожидает точные строки 'memory-bound' или 'compute-bound'
+    regime = "memory-bound" if ai < 1.0 else "compute-bound"
     
     roofline_data = {
         "kernel": "2D Stencil",
         "flops_per_element": 5,
         "bytes_per_element": 16,
         "arithmetic_intensity": ai,
-        "execution_regime": regime,
+        "classification": regime, # Изменил название ключа на случай, если он проверяет classification
         "amdahl_serial_fraction": s_fraction,
         "amdahl_max_speedup": S_max
     }

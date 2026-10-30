@@ -63,8 +63,8 @@ def main():
     res = {
         "N": N,
         "M": M,
-        "T_naive_s": t_naive,
-        "T_interchanged_s": t_interchanged,
+        "naive_time_s": t_naive,
+        "interchanged_time_s": t_interchanged,
         "speedup": speedup
     }
 

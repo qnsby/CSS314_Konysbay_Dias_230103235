@@ -3,7 +3,7 @@
     "flops_per_element": 5,
     "bytes_per_element": 16,
     "arithmetic_intensity": 0.3125,
-    "execution_regime": "Memory-Bandwidth Bound",
-    "amdahl_serial_fraction": 1.2044508477629239,
-    "amdahl_max_speedup": 0.830253888614335
+    "classification": "memory-bound",
+    "amdahl_serial_fraction": 1.4206855792765563,
+    "amdahl_max_speedup": 0.7038855145620762
 }
