@@ -1,0 +1,9 @@
+{
+    "kernel": "2D Stencil",
+    "flops_per_element": 5,
+    "bytes_per_element": 16,
+    "arithmetic_intensity": 0.3125,
+    "execution_regime": "Memory-Bandwidth Bound",
+    "amdahl_serial_fraction": 1.2044508477629239,
+    "amdahl_max_speedup": 0.830253888614335
+}
