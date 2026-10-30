@@ -1,0 +1,9 @@
+{
+    "os": "Windows 11",
+    "cpu_model": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+    "physical_cores": 8,
+    "logical_cores": 16,
+    "base_freq_mhz": 2304.0,
+    "cache_line_size": 64,
+    "python_version": "3.13.13"
+}
