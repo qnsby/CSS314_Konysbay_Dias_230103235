@@ -1,0 +1,7 @@
+{
+  "alpha_unconstrained": 1.0237942234651822,
+  "alpha_physical_projection": 1.0,
+  "rmse": 0.3546222087157611,
+  "definition": "S=T_serial(P*k)/T_parallel(P*k); fixed intercept S(1)=1; equal-weight OLS over raw runs",
+  "caveat": "Out-of-range alpha indicates model failure. Clipping is not a replacement fit. P=1 residual does not change the fitted slope."
+}
