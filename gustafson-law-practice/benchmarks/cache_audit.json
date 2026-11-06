@@ -1,0 +1,26 @@
+[
+    {
+        "Level":  3,
+        "InstalledSize":  384,
+        "MaxCacheSize":  384,
+        "DeviceID":  "Cache Memory 0"
+    },
+    {
+        "Level":  3,
+        "InstalledSize":  256,
+        "MaxCacheSize":  256,
+        "DeviceID":  "Cache Memory 1"
+    },
+    {
+        "Level":  4,
+        "InstalledSize":  10240,
+        "MaxCacheSize":  10240,
+        "DeviceID":  "Cache Memory 2"
+    },
+    {
+        "Level":  5,
+        "InstalledSize":  24576,
+        "MaxCacheSize":  24576,
+        "DeviceID":  "Cache Memory 3"
+    }
+]
