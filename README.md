@@ -1,1 +1,7 @@
 # CSS314_Konysbay_Dias_230103235
+# M4: Final Submission Summary
+
+This repository contains the completion of the 180-Minute Solo Lab Practicum, focusing on empirical memory hierarchy, concurrency contention, and scaling limits.
+
+## Bottleneck Findings Summary
+In Milestone 1, the memory stride benchmark successfully captured the latency cliff at stride-8, demonstrating that once contiguous 64-byte L1 cache-line accesses are defeated, execution throughput collapses by an order of magnitude. Furthermore, the loop interchange experiment (i-k-j) yielded a significant empirical speedup over the naive (i-j-k) approach by exploiting spatial locality. In Milestone 2, pathological false sharing in the unpadded shared-memory arrays caused severe negative scaling, which was quantitatively proven via a sharply rising Karp-Flatt metric. This was successfully remediated by introducing 64-byte padding and thread-local privatization, restoring flat near-zero contention. Finally, Milestone 3 confirmed Amdahl's Law constraints during strong scaling, contrasted with robust throughput under Gustafson's weak scaling model, and situated the 2D stencil kernel firmly in the Memory-Bandwidth Bound regime of the Roofline model due to its low arithmetic intensity (~0.31 FLOPs/Byte).
